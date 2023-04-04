@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: darkslateblue;
+  box-sizing: border-box;
+
+  font-family: 'Smythe', cursive;
+}
+
+.content-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.app {
+  background-color: #f5f5f5;
+
+  width: 600px;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.add-btn_box {
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-btn {
+  font-size: 32px;
+}
