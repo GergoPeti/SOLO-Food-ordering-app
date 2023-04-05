@@ -4,15 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="styles.css" />
+    <!-- 🦆🦆---------- FONTS ----------🦆🦆 🟢-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 🦆🦆---------- FONTS ----------🦆🦆 🔴-->
     <script defer src="script.js"></script>
-    <title>Food Ordering App</title>
+    <title>Mobile Restaurant Menu</title>
   </head>
   <body>
     <div class="content-box">
@@ -77,28 +84,30 @@
           </div>
         </section>
 
-        <section class="order-sum">
-          <h3>Your order</h3>
-          <div class="order-item">
-            <p class="food-name">Pizza</p>
-            <p class="remove-order">remove</p>
-            <p class="food-price">$14</p>
+        <section class="order_box">
+          <div class="order-sum">
+            <h3>Your order</h3>
+            <div class="order-item">
+              <p class="food-name">Pizza</p>
+              <p class="remove-order">remove</p>
+              <p class="food-price">$14</p>
+            </div>
+
+            <div class="order-item">
+              <p class="food-name">Beer</p>
+              <p class="remove-order">remove</p>
+              <p class="food-price">$12</p>
+            </div>
+
+            <div class="rule"></div>
+
+            <div class="sum-price_box">
+              <p>Total price:</p>
+              <p>$26</p>
+            </div>
+
+            <button class="complete-btn">Complete order</button>
           </div>
-
-          <div class="order-item">
-            <p class="food-name">Beer</p>
-            <p class="remove-order">remove</p>
-            <p class="food-price">$12</p>
-          </div>
-
-          <div class="rule"></div>
-
-          <div class="sum-price_box">
-            <p>Total price:</p>
-            <p>$26</p>
-          </div>
-
-          <div class="complete-btn">Complete order</div>
         </section>
       </div>
     </div>
