@@ -82,9 +82,49 @@
               <div class="add-btn">+</div>
             </div>
           </div>
+
+          <div class="form_box hidden">
+            <h2>Enter card details</h2>
+            <form class="form">
+              <div class="inputfields">
+                <input
+                  type="text"
+                  name="fullName"
+                  id="full-name"
+                  placeholder="Enter your name"
+                  pattern="[A-Za-z ]+"
+                  required
+                />
+
+                <input
+                  type="text"
+                  name="cardNumber"
+                  id="card-number"
+                  placeholder="Enter card number"
+                  pattern="\d{8}-\d{8}-\d{8}"
+                  required
+                />
+
+                <input
+                  type="text"
+                  name="CVV"
+                  id="cvv"
+                  placeholder="Enter CVV"
+                  pattern="\d{3}"
+                  required
+                />
+              </div>
+
+              <button class="complete-btn form-btn">Pay</button>
+            </form>
+          </div>
+
+          <div class="message_box hidden">
+            <p>Thanks, James! Your order is on its way!</p>
+          </div>
         </section>
 
-        <section class="order_box">
+        <section class="order_box hidden">
           <div class="order-sum">
             <h3>Your order</h3>
             <div class="order-item">
