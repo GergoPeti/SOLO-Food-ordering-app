@@ -78,6 +78,13 @@ header .subtitle {
   padding-top: 0;
 }
 
+.emoji_box {
+  font-size: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .food-info_box {
   display: flex;
   flex-direction: column;
@@ -101,6 +108,7 @@ header .subtitle {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+  cursor: pointer;
 
   display: flex;
   justify-content: center;
