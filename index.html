@@ -86,6 +86,9 @@
 
         <section class="form-box_container hidden">
           <div class="form_box">
+            <div class="esc-box">
+              <div class="esc">X</div>
+            </div>
             <h2>Enter card details</h2>
             <form class="form">
               <div class="inputfields">
@@ -117,7 +120,7 @@
                 />
               </div>
 
-              <button class="complete-btn form-btn">Pay</button>
+              <button class="complete-btn" id="form-btn">Pay</button>
             </form>
           </div>
         </section>
@@ -128,31 +131,35 @@
           </div>
         </section>
 
-        <section class="order_box hidden">
-          <div class="order-sum">
-            <h3>Your order</h3>
-            <div class="order-item">
-              <p class="food-name">Pizza</p>
-              <p class="remove-order">remove</p>
-              <p class="food-price marle-auto">$14</p>
+        <div class="order-bigbox">
+          <section class="order_box">
+            <div class="order-sum">
+              <h3>Your order</h3>
+              <div class="insert-orders">
+                <!-- <div class="order-item">
+                <p class="food-name">Pizza</p>
+                <p class="remove-order">remove</p>
+                <p class="food-price marle-auto">$14</p>
+              </div>
+
+              <div class="order-item">
+                <p class="food-name">Beer</p>
+                <p class="remove-order">remove</p>
+                <p class="food-price marle-auto">$12</p>
+              </div> -->
+              </div>
+
+              <div class="rule"></div>
+
+              <div class="sum-price_box">
+                <!-- <p>Total price:</p>
+              <p>$26</p> -->
+              </div>
+
+              <button class="complete-btn">Complete order</button>
             </div>
-
-            <div class="order-item">
-              <p class="food-name">Beer</p>
-              <p class="remove-order">remove</p>
-              <p class="food-price marle-auto">$12</p>
-            </div>
-
-            <div class="rule"></div>
-
-            <div class="sum-price_box">
-              <p>Total price:</p>
-              <p>$26</p>
-            </div>
-
-            <button class="complete-btn">Complete order</button>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
     </div>
   </body>
