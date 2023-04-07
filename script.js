@@ -73,6 +73,9 @@ payBtn.addEventListener('click', function (e) {
 
   document.querySelector('.order-bigbox').style.display = 'none';
   document.querySelector('.form-box_container').style.display = 'none';
+
+  document.querySelector('.message-box_container').classList.remove('hidden');
+  document.querySelector('.app ').style.paddingBottom = '280px';
 });
 
 // Closing payment container with Escape key
