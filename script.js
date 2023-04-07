@@ -63,21 +63,16 @@ document.addEventListener('click', function (e) {
     document.querySelector('.form-box_container').classList.remove('hidden');
   } else if (e.target.className === 'esc') {
     document.querySelector('.form-box_container').classList.add('hidden');
-  } // else if (e.target.id === 'form-btn') {
-  // console.log('form-btn clicked');
-  // document.querySelector('.order-bigbox').classList.add('hidden');
-  // document.querySelector('.form-box_container').classList.add('hidden');
-  //}
-  console.log(e);
+  }
 });
 
 const payBtn = document.querySelector('#form-btn');
 
 payBtn.addEventListener('click', function (e) {
-  // e.preventDefault();
-  console.log('form-btn clicked');
-  document.querySelector('.order-bigbox').classList.add('hidden');
-  document.querySelector('.form-box_container').classList.add('hidden');
+  e.preventDefault();
+
+  document.querySelector('.order-bigbox').style.display = 'none';
+  document.querySelector('.form-box_container').style.display = 'none';
 });
 
 // Closing payment container with Escape key
@@ -90,10 +85,6 @@ document.addEventListener('keydown', function (e) {
 function renderOrders() {
   document.querySelector('.order-bigbox').classList.remove('hidden');
   document.querySelector('.insert-orders').innerHTML = loadOrderContent();
-
-  // if (orders.length === 0) {
-  //   document.querySelector('.insert-orders').classList.add('hidden');
-  // }
 
   totalPriceCalc();
 }

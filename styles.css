@@ -155,10 +155,6 @@ header .subtitle {
   margin-bottom: 22px;
 }
 
-/* .order-item:nth-of-type(1) {
-  margin-bottom: 22px;
-} */
-
 .order-item:nth-last-of-type(1) {
   margin-bottom: 31px;
 }
